@@ -1,1 +1,1 @@
-"# architecture-insuretech" 
+# architecture-insuretech
