@@ -32,3 +32,8 @@
 
 Диаграмма контейнеров:
 ![Диаграмма контейнеров](Task3/InsureTech_C4_сontainer-diagram.drawio.png)
+
+## Task 4
+
+Диаграмма контейнеров:
+![Диаграмма контейнеров](Task4/InsureTech_C4_сontainer-diagram.drawio.png)
