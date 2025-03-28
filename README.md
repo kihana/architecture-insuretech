@@ -37,3 +37,40 @@
 
 Диаграмма контейнеров:
 ![Диаграмма контейнеров](Task4/InsureTech_C4_сontainer-diagram.drawio.png)
+
+## Task 5
+
+Схема GraphQL: 
+[Схема GraphQL](Task5/client-info.gql)
+
+```
+type Client {
+    id: ID!
+    name: String!
+    age: Int!
+    documents: [Document!]
+    relatives: [Relative!]
+}
+
+type Document {
+    id: ID!
+    type: String!
+    number: String!
+    issueDate: String!
+    expiryDate: String!
+}
+     
+type Relative {
+    id: ID!
+    relationType: String!
+    name: String!
+    age: Int!
+}
+
+
+type Query {
+  getClient(id: ID!): Client
+  getClientDocuments(id: ID!): [Document]
+  getClientRelatives(id: ID!): [Relative]
+}
+```
