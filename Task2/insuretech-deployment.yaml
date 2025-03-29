@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insuretech-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: insuretech-deployment
+  template:
+    metadata:
+      labels:
+        app: insuretech-deployment
+    spec:
+      containers:
+      - image: shestera/scaletestapp:latest
+        name: scaletestapp
+        resources:
+          requests:
+            memory: "30Mi"
+          limits:
+            memory: "60Mi" 
